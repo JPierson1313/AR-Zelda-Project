@@ -30,6 +30,7 @@ public class RayCastButtonScript : MonoBehaviour
                     case "InfoButton":
                         mainScreenItems.SetActive(false);
                         map.SetActive(true);
+                        map.GetComponent<MapScaleScript>().canIncrease = true;
                         break;
 
                     case "BackButton":
